@@ -12,7 +12,7 @@ RUN echo "deb https://download.mono-project.com/repo/debian stable-focal main" >
 
 RUN apt-get update
 
-RUN apt-get -y install bzip2 mono-complete lynx openjdk-8-jdk unzip
+RUN apt-get -y install bzip2 mono-complete lynx openjdk-8-jdk unzip curl
 
 RUN mkdir -p /android/sdk
 
