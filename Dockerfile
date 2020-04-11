@@ -1,6 +1,6 @@
 # escape=`
 
-FROM mcr.microsoft.com/dotnet/core/sdk:3.0
+FROM ubuntu:20.04
 
 RUN echo "deb http://ftp.debian.org/debian stable main contrib" >> /etc/apt/sources.list
 
