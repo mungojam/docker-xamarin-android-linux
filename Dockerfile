@@ -4,7 +4,7 @@ FROM ubuntu:20.04
 
 RUN apt-get update
 
-RUN apt-get -y install gnupg2 debian-archive-keyring debian-keyring
+RUN apt-get -y install gnupg2 debian-archive-keyring debian-keyring ca-certificates
 
 RUN echo "deb http://ftp.debian.org/debian stable main contrib" >> /etc/apt/sources.list
 
