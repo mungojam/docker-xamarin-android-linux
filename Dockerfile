@@ -35,5 +35,6 @@ ENV ANDROID_SDK_PATH=/android/sdk/
 ENV ANDROID_SDK_ROOT=/android/sdk/
 ENV PATH=/android/xamarin/bin/Release/bin:$PATH
 ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
+ENV _JAVA_OPTIONS='-Dfile.encoding=UTF-8'
 
 ENTRYPOINT bash
