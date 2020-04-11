@@ -9,7 +9,11 @@ RUN apt-get update
 RUN apt-get -y install gnupg2 
 
 RUN apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 3FA7E0328081BFF6A14DA29AA6A19B38D3D831EF
-RUN echo "deb https://download.mono-project.com/repo/debian preview-stretch main" >> /etc/apt/sources.list.d/mono-official-preview.list
+RUN apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 04EE7237B7D453EC 
+RUN apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 648ACFD622F3D138
+RUN apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys DCC9EFBF77E11517
+
+RUN echo "deb https://download.mono-project.com/repo/debian focal main" >> /etc/apt/sources.list.d/mono-official-preview.list
 
 RUN apt-get update
 
