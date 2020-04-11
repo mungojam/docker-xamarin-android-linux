@@ -4,7 +4,7 @@ FROM ubuntu:20.04
 
 RUN echo "deb http://ftp.debian.org/debian stable main contrib" >> /etc/apt/sources.list
 
-apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 3FA7E0328081BFF6A14DA29AA6A19B38D3D831EF
+RUN apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 3FA7E0328081BFF6A14DA29AA6A19B38D3D831EF
 RUN echo "deb https://download.mono-project.com/repo/debian preview-stretch main" >> /etc/apt/sources.list.d/mono-official-preview.list
 
 RUN apt-get update
